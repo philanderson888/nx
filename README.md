@@ -27,6 +27,7 @@
   - [run a project](#run-a-project)
   - [run many](#run-many)
 - [Option 2: Run with single command](#option-2-run-with-single-command)
+  - [docker](#docker)
 
 ## overview
 
@@ -188,5 +189,15 @@ nx run-many -t build lint
 ```
 
 # Option 2: Run with single command
+
+```bash
 npm run docker:express
+```
+
+
+## docker
+
+```bash
+docker build -t user-server .
+docker run -p 5005:5005 user-server
 ```
