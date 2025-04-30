@@ -1,0 +1,15 @@
+{
+  "name": "@apps/node-express-web-server",
+  "version": "1.0.0",
+  "description": "Simple Express.js Web Server",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

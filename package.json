@@ -1,21 +1,24 @@
 {
-  "name": "@org/source",
-  "version": "0.0.0",
-  "license": "MIT",
-  "scripts": {},
-  "private": true,
-  "dependencies": {},
-  "devDependencies": {
-    "@nx/js": "20.8.1",
-    "@swc-node/register": "~1.9.1",
-    "@swc/core": "~1.5.7",
-    "@swc/helpers": "~0.5.11",
-    "nx": "20.8.1",
-    "prettier": "^2.6.2",
-    "tslib": "^2.3.0",
-    "typescript": "~5.7.2"
-  },
+  "name": "@apps/source",
   "workspaces": [
-    "packages/*"
-  ]
+    "apps/*"
+  ],
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docker:hello": "cd apps/node-js-hello-world-on-docker && docker build -t node-hello-world . && docker run node-hello-world",
+    "docker:web": "cd apps/node-js-web-server-on-docker && docker build -t node-web-server . && docker run -p 5004:5004 node-web-server",
+    "docker:express": "cd apps/node-express-web-server-on-docker && docker build -t express-web-server . && docker run -p 5005:5005 express-web-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tslib": "^2.8.0",
+    "typescript": "~5.5.2",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8"
+  },
+  "dependencies": {}
 }

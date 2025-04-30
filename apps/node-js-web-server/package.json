@@ -1,0 +1,12 @@
+{
+  "name": "@apps/node-js-web-server",
+  "version": "1.0.0",
+  "description": "Simple Node.js Web Server",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

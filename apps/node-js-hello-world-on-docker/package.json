@@ -1,0 +1,12 @@
+{
+  "name": "@apps/node-js-hello-world-on-docker",
+  "version": "1.0.0",
+  "description": "Simple Node.js Hello World app in Docker",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
